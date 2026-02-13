@@ -61,7 +61,7 @@ jobs:
 
             - name: Build
               run: |
-                dotnet build --no-restore ./src/Todo.Api.sln  
+                dotnet build --no-restore --Configuration Release ./src/Todo.Api.sln  
             
             - name: Test
               run: |
