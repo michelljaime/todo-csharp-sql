@@ -42,7 +42,7 @@ jobs:
     backend-build-and-test:
         needs: versionamento
         runs-on: ubuntu-latest
-        name: Backend Build an Test
+        name: Backend Build and Test
 
         steps:
             - name: Checkout code
