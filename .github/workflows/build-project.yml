@@ -61,11 +61,11 @@ jobs:
 
             - name: Build
               run: |
-                dotnet build --no-restore --Configuration Release ./src/Todo.Api.sln  
+                dotnet build --no-restore -p:Configuration=Release ./src/Todo.Api.sln  
             
             - name: Test
               run: |
-                dotnet test ./src/Todo.Api.sln --no-restore --no-build --Configuration Release --logger trx --results-directory "TestResults"   
+                dotnet test ./src/Todo.Api.sln --no-restore --no-build -p:Configuration=Release --logger trx --results-directory "TestResults"   
           
             - uses: actions/upload-artifact@v4
               with:
