@@ -73,7 +73,7 @@ jobs:
                 path: TestResults   
 
     backend-lint:
-        needs: backend-build-and-test
+        needs: versionamento
         runs-on: ubuntu-latest
         name: Backend lint
 
@@ -127,7 +127,7 @@ jobs:
               npm run build    
 
     frontend-lint:
-      needs: frontend-build-and-test
+      needs: versionamento
       runs-on: ubuntu-latest
       name: Frontend lint
       defaults:
