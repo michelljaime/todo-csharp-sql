@@ -57,6 +57,6 @@ app.MapGroup("/version")
     .MapVersionApi();
 
 // Healtch check
-app.MapHealthChecks("/hc");    
+app.MapHealthChecks("/hc");
 
 app.Run();
